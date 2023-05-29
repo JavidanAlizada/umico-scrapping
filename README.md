@@ -22,5 +22,5 @@ To initialize the `Executor` class, you need to provide two parameters:
 Example usage:
 
 ```python
-executor = Executor(total_page=100, get_product_data_from_file=False)
+executor = Executor(total_page=1, get_product_data_from_file=False)
 executor.execute()
