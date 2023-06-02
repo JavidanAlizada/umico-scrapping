@@ -11,5 +11,5 @@ class Request:
         self.__url = url
 
     def request(self):
-        response = requests.get(self.__url)
+        response = requests.get(self.__url, verify=False)
         return response

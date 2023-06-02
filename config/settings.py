@@ -57,6 +57,17 @@ class Endpoint:
             }
         }
 
+    class ProductByCategory:
+        url = PRODUCT_URL
+        query_params = {
+            'static_params': PRODUCT_BY_CATEGORY_STATIC_QUERY_PARAMS,
+            'dynamic_params': {
+                'per_page': '1',
+                'page': '1',
+                'q%5Bcategory_id_in%5D': '',
+            }
+        }
+
     def __get_iterative_dynamic_params(self, query_params: dict):
         response_params = EMTPY_STRING
         dynamic_params = query_params['dynamic_params']

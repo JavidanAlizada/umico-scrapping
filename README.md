@@ -14,13 +14,8 @@ To start the program, follow these steps:
 
 ## Initializing the Executor Class
 
-To initialize the `Executor` class, you need to provide two parameters:
-
-1. `total_page`: The number of product pages you want to scrape from Umico. Each page contains 100 products. The default value for this parameter is `MAX_PAGE_SIZE`, which is 3304.
-2. `get_product_data_from_file`: If you already have scraped products and want to read the data from a file on the next run, set this parameter to `True`. Otherwise, it is `False` by default.
-
 Example usage:
 
 ```python
-executor = Executor(total_page=1, get_product_data_from_file=False)
+executor = Executor()
 executor.execute()
